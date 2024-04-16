@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label><b>Enter the String to check Paliondrome or not:</b></label><br><br>
+    <input type="text" id="id1">
+    <button type="button" id="bt1" onclick="f1()">Check</button>
+    <button type="button" id="bt2" onclick="f2()">Clear</button>
+    <p id="id2"></p>
+    <script>
+       
+        function f1(){
+            n=document.getElementById('id1').value;
+            x=n.length;
+            for(i=0;i<x/2;i++){
+                a=n[i];
+                b=n[x-i-1]
+                if(a!=b){
+                    document.getElementById('id2').innerHTML=" The string " +n+ " is  not paliondrome";
+                    return;
+                }
+                    document.getElementById('id2').innerHTML=" The string "  +n+ " is paliondrome";
+                    return;
+                }
+            } 
+        function f2(){
+            document.getElementById('id1').value = "";
+            document.getElementById('id2').innerHTML = ""; 
+
+        }
+    </script>
+</body>
+</html>

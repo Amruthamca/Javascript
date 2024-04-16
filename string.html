@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="id1"></p>
+    <script>
+        a="Hello Hello World";
+        document.getElementById('id1').innerHTML=a;
+        document.write(a.length);
+        document.write("<br>")
+        document.write(a.charAt(1))
+        document.write("<br>")
+        part=a.slice(1,7)
+        document.write(part)
+        document.write("<br>")
+        x=a.substring(2,5)
+        document.write(x)
+        document.write("<br>")
+        document.write(a.toUpperCase())
+        document.write("<br>")
+        b="Welcome"
+        c=a.concat(" ",b)
+        document.write(c)
+        document.write("<br>")
+        document.write(a.replaceAll("Hello","Hai"))
+        document.write("<br>")
+        document.write(a.split(" "))
+        document.write("<br>")
+        document.write(a.indexOf("World"))
+        document.write("<br>")
+        document.write(a.startsWith("Hello"))
+        document.write("<br>")
+        document.write(a.endsWith("World"))
+        document.write("<br>")
+        document.write(a.includes("Hello"))
+        document.write("<br>")
+        x="a"
+        y=x.padStart(4,"b")
+        document.write(y)
+        document.write("<br>")
+        c="x"
+        d=c.padEnd(4,"y")
+        document.write(d)
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button type="button" id="bt1" onclick="f1()">Button 1</button>
+    <script>
+        function f1() {
+            newbutton=document.createElement("button");
+            newbutton.type ="button";
+            newbutton.innerHTML="Button 2";
+            document.body.appendChild(newbutton);
+        }
+    </script>
+</body>
+</html>

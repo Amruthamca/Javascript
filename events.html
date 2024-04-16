@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="id1" onmouseover="fun()" onmouseout="f2()">Hello Everyone</h1>
+    <script>
+        function fun(){
+            document.getElementById('id1').style.fontSize='100px';
+        }
+        function f2(){
+            document.getElementById('id1').style.color='green';
+        }
+        function f3(){
+            document.getElementById('i1').style.height='500px';
+            document.getElementById('i1').style.width='500px';
+        }
+        function f3(){
+            document.getElementById('i1').style.height='300px';
+            document.getElementById('i1').style.width='300px';
+        }
+       
+        
+    </script>
+    <img src="img1.jpg" height="300px" width="300px" onmouseover="f3()" id="i1" >
+    <select id="s1" onchange="f5()">
+        <option value="red">red</option>
+        <option value="blue">blue</option>
+        <option value="green">green</option>
+    </select>
+    <p id="p1"></p>
+    <script>
+         function f5(){
+            x=document.getElementById('s1').value;
+            document.getElementById('p1').innerHTML="you have selected" +x;
+
+        }
+    </script>
+    <input type="text" id="t1" onchange="f6()">
+    <script>
+    function f6(){
+        x=document.getElementById('t1');
+        x.value=x.value.toUpperCase();
+    }
+
+        </script>
+        <form onsubmit="f7()">
+            <input type="text">
+            <input type="submit">
+        </form>
+        <script>
+            function f7(){
+                alert("The form has submitted");
+            }
+        </script>
+</body>
+</html>

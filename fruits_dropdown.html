@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <select id="s1" onchange="f1()">
+        <option value="Apple">Apple</option>
+        <option value="Orange">Orange</option>
+        <option value="Mango">Mango</option>
+        <option value="Grapes">Grapes</option>
+    </select>
+    <input type="text" id="id1">
+    <script>
+        function f1() {
+            f=document.getElementById('s1').value;
+            switch(f){
+                case 'Apple':
+                    price='100/-';
+                    break;
+                case 'Orange':
+                    price='200/-';
+                    break;
+                case 'Mango':
+                    price='300/-';
+                    break;
+                case 'Grapes':
+                    price='400/-';
+                    break;
+                default:
+                    price='0/-';
+            }
+            document.getElementById('id1').value = price;
+        }
+    </script>
+</body>
+</html>
